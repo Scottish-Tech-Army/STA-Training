@@ -8,9 +8,9 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
     - name: Checkout
-      uses: actions/checkout@master
+      uses: actions/checkout@main
     - name: Configure AWS Credentials and upload
-      uses: jakejarvis/s3-sync-action@master
+      uses: jakejarvis/s3-sync-action@main
       with:
         args: --acl public-read-write
       env:
